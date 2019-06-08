@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738435473979",
+    "firebase_url": "https://thothmad.firebaseio.com",
+    "project_id": "thothmad",
+    "storage_bucket": "thothmad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738435473979:android:a6f94aa18511defa",
+        "android_client_info": {
+          "package_name": "com.example.thothmad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738435473979-ke92f3m7l6hubnqhggjlvfpcahp4hn32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thothmad",
+            "certificate_hash": "a6a1333e9e70742571d1e8044c856d2d10ad8211"
+          }
+        },
+        {
+          "client_id": "738435473979-pnobio19j6rba3m94afp4agcf9ajqcat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEbDNu6RI4lzT3P91tki17ZoLnznR789E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738435473979-pnobio19j6rba3m94afp4agcf9ajqcat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
