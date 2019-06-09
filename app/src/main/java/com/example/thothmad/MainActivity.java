@@ -9,38 +9,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.thothmad.Fragment.HomeFragment;
+import com.example.thothmad.Fragment.NotificationFragment;
+import com.example.thothmad.Fragment.ProfileFragment;
+import com.example.thothmad.Fragment.SearchFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottom_navigation;
     Fragment selectedfragment = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        /*super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         bottom_navigation = findViewById(R.id.bottom_navigation);
         bottom_navigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-
-        Bundle intent = getIntent().getExtras();
-        if (intent != null){
-            String publisher = intent.getString("publisherid");
-
-            SharedPreferences.Editor editor = getSharedPreferences("PREFS", MODE_PRIVATE).edit();
-            editor.putString("profileid", publisher);
-            editor.apply();
-
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new ProfileFragment()).commit();
-        } else {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new HomeFragment()).commit();
-        }/*
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                new HomeFragment()).commit();
     }
-    /*private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
+    private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -73,5 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
                     return true;
                 }
-      */      };
+
+    }
+
+    ;
 }
