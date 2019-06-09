@@ -4,12 +4,12 @@
 
     <ImageView android:layout_height="50dp" android:layout_width="83dp" android:src="@drawable/logo"/>
 
-    <EditText android:background="@drawable/edittext_background" android:padding="10dp" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:inputType="textEmailAddress" android:id="@+id/email" android:textColorHint="@color/white" android:hint="Email"/>
+    <EditText android:background="@drawable/edittext_background" android:padding="10dp" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:textColor="@color/white" android:inputType="textEmailAddress" android:id="@+id/email" android:textColorHint="@color/white" android:hint="Email"/>
 
-    <EditText android:background="@drawable/edittext_background" android:padding="10dp" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:inputType="textPassword" android:id="@+id/password" android:textColorHint="@color/white" android:hint="Password"/>
+    <EditText android:background="@drawable/edittext_background" android:padding="10dp" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:textColor="@color/white" android:inputType="textPassword" android:id="@+id/password" android:textColorHint="@color/white" android:hint="Password"/>
 
     <Button android:background="@drawable/button_background" android:layout_height="wrap_content" android:layout_width="247dp" android:layout_marginTop="15dp" android:id="@+id/login" android:textColor="@color/white" android:text="Log in"/>
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:id="@+id/txt_signup" android:textColor="@color/white" android:text="Don't have an account? Sign up"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:id="@+id/txt_signup" android:textColor="@color/white" android:text="Click here to Sign up!"/>
 
 </LinearLayout>
