@@ -54,9 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pd = new ProgressDialog(RegisterActivity.this);
-                pd.setMessage("Please wait...");
-                pd.show();
+
 
                 String str_username = username.getText().toString();
                 String str_fullname = fullname.getText().toString();
@@ -75,6 +73,9 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void register(final String username, final String fullname, String email, String password) {
+        pd = new ProgressDialog(RegisterActivity.this);
+        pd.setMessage("Please wait...");
+        pd.show();
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override

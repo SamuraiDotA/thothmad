@@ -50,9 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final ProgressDialog pd = new ProgressDialog(LoginActivity.this);
-                pd.setMessage("Please wait...");
-                pd.show();
+
 
                 String str_email = email.getText().toString();
                 String str_password = password.getText().toString();
@@ -65,8 +63,10 @@ public class LoginActivity extends AppCompatActivity {
                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
+                                    final ProgressDialog pd = new ProgressDialog(LoginActivity.this);
+                                    pd.setMessage("Please wait...");
+                                    pd.show();
                                     if (task.isSuccessful()) {
-
                                         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Users")
                                                 .child(auth.getCurrentUser().getUid());
 
